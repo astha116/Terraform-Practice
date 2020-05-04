@@ -1,0 +1,894 @@
+2020/04/18 13:29:46 [INFO] Terraform version: 0.12.24  
+2020/04/18 13:29:46 [INFO] Go runtime version: go1.12.13
+2020/04/18 13:29:46 [INFO] CLI args: []string{"C:\\Users\\Administrator\\Downloads\\terraform_0.12.24_windows_amd64\\terraform.exe", "plan"}
+2020/04/18 13:29:46 [DEBUG] Attempting to open CLI config file: C:\Users\Administrator\AppData\Roaming\terraform.rc
+2020/04/18 13:29:46 [DEBUG] File doesn't exist, but doesn't need to. Ignoring.
+2020/04/18 13:29:46 [INFO] CLI command args: []string{"plan"}
+2020/04/18 13:29:46 [TRACE] Meta.Backend: no config given or present on disk, so returning nil config
+2020/04/18 13:29:46 [TRACE] Meta.Backend: backend has not previously been initialized in this working directory
+2020/04/18 13:29:46 [DEBUG] New state was assigned lineage "c391e2ac-f4f1-fe61-89d2-e47d2512e98c"
+2020/04/18 13:29:46 [TRACE] Meta.Backend: using default local state only (no backend configuration, and no existing initialized backend)
+2020/04/18 13:29:46 [TRACE] Meta.Backend: instantiated backend of type <nil>
+2020/04/18 13:29:46 [DEBUG] checking for provider in "."
+2020/04/18 13:29:46 [DEBUG] checking for provider in "C:\\Users\\Administrator\\Downloads\\terraform_0.12.24_windows_amd64"
+2020/04/18 13:29:46 [DEBUG] checking for provider in ".terraform\\plugins\\windows_amd64"
+2020/04/18 13:29:46 [DEBUG] found provider "terraform-provider-azurerm_v1.44.0_x4.exe"
+2020/04/18 13:29:46 [DEBUG] found valid plugin: "azurerm", "1.44.0", "C:\\Users\\Administrator\\Desktop\\test\\Terraform-Practice\\.terraform\\plugins\\windows_amd64\\terraform-provider-azurerm_v1.44.0_x4.exe"
+2020/04/18 13:29:46 [DEBUG] checking for provisioner in "."
+2020/04/18 13:29:46 [DEBUG] checking for provisioner in "C:\\Users\\Administrator\\Downloads\\terraform_0.12.24_windows_amd64"
+2020/04/18 13:29:46 [DEBUG] checking for provisioner in ".terraform\\plugins\\windows_amd64"
+2020/04/18 13:29:46 [TRACE] Meta.Backend: backend <nil> does not support operations, so wrapping it in a local backend
+2020/04/18 13:29:46 [INFO] backend/local: starting Plan operation
+2020/04/18 13:29:46 [TRACE] backend/local: requesting state manager for workspace "default"
+2020/04/18 13:29:46 [TRACE] backend/local: state manager for workspace "default" will:
+ - read initial snapshot from terraform.tfstate
+ - write new snapshots to terraform.tfstate
+ - create any backup at terraform.tfstate.backup
+2020/04/18 13:29:46 [TRACE] backend/local: requesting state lock for workspace "default"
+2020/04/18 13:29:46 [TRACE] statemgr.Filesystem: preparing to manage state snapshots at terraform.tfstate
+2020/04/18 13:29:46 [TRACE] statemgr.Filesystem: no previously-stored snapshot exists
+2020/04/18 13:29:46 [TRACE] statemgr.Filesystem: locking terraform.tfstate using LockFileEx
+2020/04/18 13:29:46 [TRACE] statemgr.Filesystem: writing lock metadata to .terraform.tfstate.lock.info
+2020/04/18 13:29:46 [TRACE] backend/local: reading remote state for workspace "default"
+2020/04/18 13:29:46 [TRACE] statemgr.Filesystem: reading latest snapshot from terraform.tfstate
+2020/04/18 13:29:46 [TRACE] statemgr.Filesystem: snapshot file has nil snapshot, but that's okay
+2020/04/18 13:29:46 [TRACE] statemgr.Filesystem: read nil snapshot
+2020/04/18 13:29:46 [TRACE] backend/local: retrieving local state snapshot for workspace "default"
+2020/04/18 13:29:46 [TRACE] backend/local: building context for current working directory
+2020/04/18 13:29:46 [TRACE] terraform.NewContext: starting
+2020/04/18 13:29:46 [TRACE] terraform.NewContext: resolving provider version selections
+2020/04/18 13:29:47 [TRACE] terraform.NewContext: loading provider schemas
+2020/04/18 13:29:47 [TRACE] LoadSchemas: retrieving schema for provider type "azurerm"
+2020-04-18T13:29:47.076+0530 [INFO]  plugin: configuring client automatic mTLS
+2020-04-18T13:29:47.118+0530 [DEBUG] plugin: starting plugin: path=C:\Users\Administrator\Desktop\test\Terraform-Practice\.terraform\plugins\windows_amd64\terraform-provider-azurerm_v1.44.0_x4.exe args=[C:\Users\Administrator\Desktop\test\Terraform-Practice\.terraform\plugins\windows_amd64\terraform-provider-azurerm_v1.44.0_x4.exe]
+2020-04-18T13:29:47.125+0530 [DEBUG] plugin: plugin started: path=C:\Users\Administrator\Desktop\test\Terraform-Practice\.terraform\plugins\windows_amd64\terraform-provider-azurerm_v1.44.0_x4.exe pid=1436
+2020-04-18T13:29:47.125+0530 [DEBUG] plugin: waiting for RPC address: path=C:\Users\Administrator\Desktop\test\Terraform-Practice\.terraform\plugins\windows_amd64\terraform-provider-azurerm_v1.44.0_x4.exe
+2020-04-18T13:29:48.619+0530 [INFO]  plugin.terraform-provider-azurerm_v1.44.0_x4.exe: configuring server automatic mTLS: timestamp=2020-04-18T13:29:48.616+0530
+2020-04-18T13:29:48.671+0530 [DEBUG] plugin: using plugin: version=5
+2020-04-18T13:29:48.671+0530 [DEBUG] plugin.terraform-provider-azurerm_v1.44.0_x4.exe: plugin address: address=127.0.0.1:10000 network=tcp timestamp=2020-04-18T13:29:48.671+0530
+2020/04/18 13:29:48 [TRACE] GRPCProvider: GetSchema
+2020/04/18 13:29:48 [TRACE] GRPCProvider: Close
+2020-04-18T13:29:48.889+0530 [DEBUG] plugin: plugin process exited: path=C:\Users\Administrator\Desktop\test\Terraform-Practice\.terraform\plugins\windows_amd64\terraform-provider-azurerm_v1.44.0_x4.exe pid=1436
+2020-04-18T13:29:48.889+0530 [DEBUG] plugin: plugin exited
+2020/04/18 13:29:48 [TRACE] terraform.NewContext: complete
+2020/04/18 13:29:48 [TRACE] backend/local: finished building terraform.Context
+2020/04/18 13:29:48 [TRACE] backend/local: requesting interactive input, if necessary
+2020/04/18 13:29:48 [TRACE] Context.Input: Prompting for provider arguments
+2020/04/18 13:29:48 [TRACE] Context.Input: Provider provider.azurerm declared at provider.tf:1,1-19
+2020/04/18 13:29:48 [TRACE] Context.Input: Input for provider.azurerm: map[string]cty.Value{}
+2020/04/18 13:29:48 [TRACE] backend/local: running validation operation
+2020/04/18 13:29:48 [INFO] terraform: building graph: GraphTypeValidate
+2020/04/18 13:29:48 [TRACE] Executing graph transform *terraform.ConfigTransformer
+2020/04/18 13:29:48 [TRACE] ConfigTransformer: Starting for path: 
+2020/04/18 13:29:48 [TRACE] Completed graph transform *terraform.ConfigTransformer with new graph:
+  azurerm_resource_group.example - *terraform.NodeValidatableResource
+  azurerm_template_deployment.terraform-arm - *terraform.NodeValidatableResource
+  ------
+2020/04/18 13:29:48 [TRACE] Executing graph transform *terraform.LocalTransformer
+2020/04/18 13:29:48 [TRACE] Completed graph transform *terraform.LocalTransformer (no changes)
+2020/04/18 13:29:48 [TRACE] Executing graph transform *terraform.OutputTransformer
+2020/04/18 13:29:48 [TRACE] Completed graph transform *terraform.OutputTransformer (no changes)
+2020/04/18 13:29:48 [TRACE] Executing graph transform *terraform.OrphanResourceInstanceTransformer
+2020/04/18 13:29:48 [TRACE] Completed graph transform *terraform.OrphanResourceInstanceTransformer (no changes)
+2020/04/18 13:29:48 [TRACE] Executing graph transform *terraform.StateTransformer
+2020/04/18 13:29:48 [TRACE] StateTransformer: state is empty, so nothing to do
+2020/04/18 13:29:48 [TRACE] Completed graph transform *terraform.StateTransformer (no changes)
+2020/04/18 13:29:48 [TRACE] Executing graph transform *terraform.OrphanOutputTransformer
+2020/04/18 13:29:48 [TRACE] Completed graph transform *terraform.OrphanOutputTransformer (no changes)
+2020/04/18 13:29:48 [TRACE] Executing graph transform *terraform.AttachResourceConfigTransformer
+2020/04/18 13:29:48 [TRACE] AttachResourceConfigTransformer: attaching to "azurerm_resource_group.example" (*terraform.NodeValidatableResource) config from instance.tf:1,1-44
+2020/04/18 13:29:48 [TRACE] AttachResourceConfigTransformer: attaching to "azurerm_template_deployment.terraform-arm" (*terraform.NodeValidatableResource) config from instance.tf:5,1-55
+2020/04/18 13:29:48 [TRACE] Completed graph transform *terraform.AttachResourceConfigTransformer (no changes)
+2020/04/18 13:29:48 [TRACE] Executing graph transform *terraform.AttachStateTransformer
+2020/04/18 13:29:48 [TRACE] Completed graph transform *terraform.AttachStateTransformer (no changes)
+2020/04/18 13:29:48 [TRACE] Executing graph transform *terraform.RootVariableTransformer
+2020/04/18 13:29:48 [TRACE] Completed graph transform *terraform.RootVariableTransformer with new graph:
+  azurerm_resource_group.example - *terraform.NodeValidatableResource
+  azurerm_template_deployment.terraform-arm - *terraform.NodeValidatableResource
+  var.Client_id - *terraform.NodeRootVariable
+  var.Client_secret - *terraform.NodeRootVariable
+  var.Subscription_id - *terraform.NodeRootVariable
+  var.Tenant_id - *terraform.NodeRootVariable
+  ------
+2020/04/18 13:29:48 [TRACE] Executing graph transform *terraform.MissingProvisionerTransformer
+2020/04/18 13:29:48 [TRACE] Completed graph transform *terraform.MissingProvisionerTransformer (no changes)
+2020/04/18 13:29:48 [TRACE] Executing graph transform *terraform.ProvisionerTransformer
+2020/04/18 13:29:48 [TRACE] Completed graph transform *terraform.ProvisionerTransformer (no changes)
+2020/04/18 13:29:48 [TRACE] Executing graph transform *terraform.ModuleVariableTransformer
+2020/04/18 13:29:48 [TRACE] Completed graph transform *terraform.ModuleVariableTransformer (no changes)
+2020/04/18 13:29:48 [TRACE] Executing graph transform *terraform.graphTransformerMulti
+2020/04/18 13:29:48 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.ProviderConfigTransformer
+2020/04/18 13:29:48 [TRACE] ProviderConfigTransformer: attaching to "provider.azurerm" provider configuration from provider.tf:1,1-19
+2020/04/18 13:29:48 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.ProviderConfigTransformer with new graph:
+  azurerm_resource_group.example - *terraform.NodeValidatableResource
+  azurerm_template_deployment.terraform-arm - *terraform.NodeValidatableResource
+  provider.azurerm - *terraform.NodeApplyableProvider
+  var.Client_id - *terraform.NodeRootVariable
+  var.Client_secret - *terraform.NodeRootVariable
+  var.Subscription_id - *terraform.NodeRootVariable
+  var.Tenant_id - *terraform.NodeRootVariable
+  ------
+2020/04/18 13:29:48 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.MissingProviderTransformer
+2020/04/18 13:29:48 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.MissingProviderTransformer (no changes)
+2020/04/18 13:29:48 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.ProviderTransformer
+2020/04/18 13:29:48 [TRACE] ProviderTransformer: azurerm_resource_group.example is provided by provider.azurerm or inherited equivalent
+2020/04/18 13:29:48 [TRACE] ProviderTransformer: azurerm_template_deployment.terraform-arm is provided by provider.azurerm or inherited equivalent
+2020/04/18 13:29:48 [TRACE] ProviderTransformer: exact match for provider.azurerm serving azurerm_template_deployment.terraform-arm
+2020/04/18 13:29:48 [DEBUG] ProviderTransformer: "azurerm_template_deployment.terraform-arm" (*terraform.NodeValidatableResource) needs provider.azurerm
+2020/04/18 13:29:48 [TRACE] ProviderTransformer: exact match for provider.azurerm serving azurerm_resource_group.example
+2020/04/18 13:29:48 [DEBUG] ProviderTransformer: "azurerm_resource_group.example" (*terraform.NodeValidatableResource) needs provider.azurerm
+2020/04/18 13:29:48 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.ProviderTransformer with new graph:
+  azurerm_resource_group.example - *terraform.NodeValidatableResource
+    provider.azurerm - *terraform.NodeApplyableProvider
+  azurerm_template_deployment.terraform-arm - *terraform.NodeValidatableResource
+    provider.azurerm - *terraform.NodeApplyableProvider
+  provider.azurerm - *terraform.NodeApplyableProvider
+  var.Client_id - *terraform.NodeRootVariable
+  var.Client_secret - *terraform.NodeRootVariable
+  var.Subscription_id - *terraform.NodeRootVariable
+  var.Tenant_id - *terraform.NodeRootVariable
+  ------
+2020/04/18 13:29:48 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.PruneProviderTransformer
+2020/04/18 13:29:48 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.PruneProviderTransformer (no changes)
+2020/04/18 13:29:48 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.ParentProviderTransformer
+2020/04/18 13:29:48 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.ParentProviderTransformer (no changes)
+2020/04/18 13:29:48 [TRACE] Completed graph transform *terraform.graphTransformerMulti with new graph:
+  azurerm_resource_group.example - *terraform.NodeValidatableResource
+    provider.azurerm - *terraform.NodeApplyableProvider
+  azurerm_template_deployment.terraform-arm - *terraform.NodeValidatableResource
+    provider.azurerm - *terraform.NodeApplyableProvider
+  provider.azurerm - *terraform.NodeApplyableProvider
+  var.Client_id - *terraform.NodeRootVariable
+  var.Client_secret - *terraform.NodeRootVariable
+  var.Subscription_id - *terraform.NodeRootVariable
+  var.Tenant_id - *terraform.NodeRootVariable
+  ------
+2020/04/18 13:29:48 [TRACE] Executing graph transform *terraform.RemovedModuleTransformer
+2020/04/18 13:29:48 [TRACE] Completed graph transform *terraform.RemovedModuleTransformer (no changes)
+2020/04/18 13:29:48 [TRACE] Executing graph transform *terraform.AttachSchemaTransformer
+2020/04/18 13:29:48 [TRACE] AttachSchemaTransformer: attaching provider config schema to provider.azurerm
+2020/04/18 13:29:48 [TRACE] AttachSchemaTransformer: attaching resource schema to azurerm_resource_group.example
+2020/04/18 13:29:48 [TRACE] AttachSchemaTransformer: attaching resource schema to azurerm_template_deployment.terraform-arm
+2020/04/18 13:29:48 [TRACE] Completed graph transform *terraform.AttachSchemaTransformer (no changes)
+2020/04/18 13:29:48 [TRACE] Executing graph transform *terraform.ReferenceTransformer
+2020/04/18 13:29:48 [DEBUG] ReferenceTransformer: "var.Tenant_id" references: []
+2020/04/18 13:29:48 [DEBUG] ReferenceTransformer: "var.Subscription_id" references: []
+2020/04/18 13:29:48 [DEBUG] ReferenceTransformer: "provider.azurerm" references: [var.Tenant_id var.Subscription_id var.Client_secret var.Client_id]
+2020/04/18 13:29:48 [DEBUG] ReferenceTransformer: "azurerm_resource_group.example" references: []
+2020/04/18 13:29:48 [DEBUG] ReferenceTransformer: "azurerm_template_deployment.terraform-arm" references: []
+2020/04/18 13:29:48 [DEBUG] ReferenceTransformer: "var.Client_id" references: []
+2020/04/18 13:29:48 [DEBUG] ReferenceTransformer: "var.Client_secret" references: []
+2020/04/18 13:29:48 [TRACE] Completed graph transform *terraform.ReferenceTransformer with new graph:
+  azurerm_resource_group.example - *terraform.NodeValidatableResource
+    provider.azurerm - *terraform.NodeApplyableProvider
+  azurerm_template_deployment.terraform-arm - *terraform.NodeValidatableResource
+    provider.azurerm - *terraform.NodeApplyableProvider
+  provider.azurerm - *terraform.NodeApplyableProvider
+    var.Client_id - *terraform.NodeRootVariable
+    var.Client_secret - *terraform.NodeRootVariable
+    var.Subscription_id - *terraform.NodeRootVariable
+    var.Tenant_id - *terraform.NodeRootVariable
+  var.Client_id - *terraform.NodeRootVariable
+  var.Client_secret - *terraform.NodeRootVariable
+  var.Subscription_id - *terraform.NodeRootVariable
+  var.Tenant_id - *terraform.NodeRootVariable
+  ------
+2020/04/18 13:29:48 [TRACE] Executing graph transform *terraform.CountBoundaryTransformer
+2020/04/18 13:29:48 [TRACE] Completed graph transform *terraform.CountBoundaryTransformer with new graph:
+  azurerm_resource_group.example - *terraform.NodeValidatableResource
+    provider.azurerm - *terraform.NodeApplyableProvider
+  azurerm_template_deployment.terraform-arm - *terraform.NodeValidatableResource
+    provider.azurerm - *terraform.NodeApplyableProvider
+  meta.count-boundary (EachMode fixup) - *terraform.NodeCountBoundary
+    azurerm_resource_group.example - *terraform.NodeValidatableResource
+    azurerm_template_deployment.terraform-arm - *terraform.NodeValidatableResource
+    provider.azurerm - *terraform.NodeApplyableProvider
+    var.Client_id - *terraform.NodeRootVariable
+    var.Client_secret - *terraform.NodeRootVariable
+    var.Subscription_id - *terraform.NodeRootVariable
+    var.Tenant_id - *terraform.NodeRootVariable
+  provider.azurerm - *terraform.NodeApplyableProvider
+    var.Client_id - *terraform.NodeRootVariable
+    var.Client_secret - *terraform.NodeRootVariable
+    var.Subscription_id - *terraform.NodeRootVariable
+    var.Tenant_id - *terraform.NodeRootVariable
+  var.Client_id - *terraform.NodeRootVariable
+  var.Client_secret - *terraform.NodeRootVariable
+  var.Subscription_id - *terraform.NodeRootVariable
+  var.Tenant_id - *terraform.NodeRootVariable
+  ------
+2020/04/18 13:29:48 [TRACE] Executing graph transform *terraform.TargetsTransformer
+2020/04/18 13:29:48 [TRACE] Completed graph transform *terraform.TargetsTransformer (no changes)
+2020/04/18 13:29:48 [TRACE] Executing graph transform *terraform.ForcedCBDTransformer
+2020/04/18 13:29:48 [TRACE] Completed graph transform *terraform.ForcedCBDTransformer (no changes)
+2020/04/18 13:29:48 [TRACE] Executing graph transform *terraform.CloseProviderTransformer
+2020/04/18 13:29:48 [TRACE] Completed graph transform *terraform.CloseProviderTransformer with new graph:
+  azurerm_resource_group.example - *terraform.NodeValidatableResource
+    provider.azurerm - *terraform.NodeApplyableProvider
+  azurerm_template_deployment.terraform-arm - *terraform.NodeValidatableResource
+    provider.azurerm - *terraform.NodeApplyableProvider
+  meta.count-boundary (EachMode fixup) - *terraform.NodeCountBoundary
+    azurerm_resource_group.example - *terraform.NodeValidatableResource
+    azurerm_template_deployment.terraform-arm - *terraform.NodeValidatableResource
+    provider.azurerm - *terraform.NodeApplyableProvider
+    var.Client_id - *terraform.NodeRootVariable
+    var.Client_secret - *terraform.NodeRootVariable
+    var.Subscription_id - *terraform.NodeRootVariable
+    var.Tenant_id - *terraform.NodeRootVariable
+  provider.azurerm - *terraform.NodeApplyableProvider
+    var.Client_id - *terraform.NodeRootVariable
+    var.Client_secret - *terraform.NodeRootVariable
+    var.Subscription_id - *terraform.NodeRootVariable
+    var.Tenant_id - *terraform.NodeRootVariable
+  provider.azurerm (close) - *terraform.graphNodeCloseProvider
+    azurerm_resource_group.example - *terraform.NodeValidatableResource
+    azurerm_template_deployment.terraform-arm - *terraform.NodeValidatableResource
+    provider.azurerm - *terraform.NodeApplyableProvider
+  var.Client_id - *terraform.NodeRootVariable
+  var.Client_secret - *terraform.NodeRootVariable
+  var.Subscription_id - *terraform.NodeRootVariable
+  var.Tenant_id - *terraform.NodeRootVariable
+  ------
+2020/04/18 13:29:48 [TRACE] Executing graph transform *terraform.CloseProvisionerTransformer
+2020/04/18 13:29:48 [TRACE] Completed graph transform *terraform.CloseProvisionerTransformer (no changes)
+2020/04/18 13:29:48 [TRACE] Executing graph transform *terraform.RootTransformer
+2020/04/18 13:29:48 [TRACE] Completed graph transform *terraform.RootTransformer with new graph:
+  azurerm_resource_group.example - *terraform.NodeValidatableResource
+    provider.azurerm - *terraform.NodeApplyableProvider
+  azurerm_template_deployment.terraform-arm - *terraform.NodeValidatableResource
+    provider.azurerm - *terraform.NodeApplyableProvider
+  meta.count-boundary (EachMode fixup) - *terraform.NodeCountBoundary
+    azurerm_resource_group.example - *terraform.NodeValidatableResource
+    azurerm_template_deployment.terraform-arm - *terraform.NodeValidatableResource
+    provider.azurerm - *terraform.NodeApplyableProvider
+    var.Client_id - *terraform.NodeRootVariable
+    var.Client_secret - *terraform.NodeRootVariable
+    var.Subscription_id - *terraform.NodeRootVariable
+    var.Tenant_id - *terraform.NodeRootVariable
+  provider.azurerm - *terraform.NodeApplyableProvider
+    var.Client_id - *terraform.NodeRootVariable
+    var.Client_secret - *terraform.NodeRootVariable
+    var.Subscription_id - *terraform.NodeRootVariable
+    var.Tenant_id - *terraform.NodeRootVariable
+  provider.azurerm (close) - *terraform.graphNodeCloseProvider
+    azurerm_resource_group.example - *terraform.NodeValidatableResource
+    azurerm_template_deployment.terraform-arm - *terraform.NodeValidatableResource
+    provider.azurerm - *terraform.NodeApplyableProvider
+  root - terraform.graphNodeRoot
+    meta.count-boundary (EachMode fixup) - *terraform.NodeCountBoundary
+    provider.azurerm (close) - *terraform.graphNodeCloseProvider
+  var.Client_id - *terraform.NodeRootVariable
+  var.Client_secret - *terraform.NodeRootVariable
+  var.Subscription_id - *terraform.NodeRootVariable
+  var.Tenant_id - *terraform.NodeRootVariable
+  ------
+2020/04/18 13:29:48 [TRACE] Executing graph transform *terraform.TransitiveReductionTransformer
+2020/04/18 13:29:48 [TRACE] Completed graph transform *terraform.TransitiveReductionTransformer with new graph:
+  azurerm_resource_group.example - *terraform.NodeValidatableResource
+    provider.azurerm - *terraform.NodeApplyableProvider
+  azurerm_template_deployment.terraform-arm - *terraform.NodeValidatableResource
+    provider.azurerm - *terraform.NodeApplyableProvider
+  meta.count-boundary (EachMode fixup) - *terraform.NodeCountBoundary
+    azurerm_resource_group.example - *terraform.NodeValidatableResource
+    azurerm_template_deployment.terraform-arm - *terraform.NodeValidatableResource
+  provider.azurerm - *terraform.NodeApplyableProvider
+    var.Client_id - *terraform.NodeRootVariable
+    var.Client_secret - *terraform.NodeRootVariable
+    var.Subscription_id - *terraform.NodeRootVariable
+    var.Tenant_id - *terraform.NodeRootVariable
+  provider.azurerm (close) - *terraform.graphNodeCloseProvider
+    azurerm_resource_group.example - *terraform.NodeValidatableResource
+    azurerm_template_deployment.terraform-arm - *terraform.NodeValidatableResource
+  root - terraform.graphNodeRoot
+    meta.count-boundary (EachMode fixup) - *terraform.NodeCountBoundary
+    provider.azurerm (close) - *terraform.graphNodeCloseProvider
+  var.Client_id - *terraform.NodeRootVariable
+  var.Client_secret - *terraform.NodeRootVariable
+  var.Subscription_id - *terraform.NodeRootVariable
+  var.Tenant_id - *terraform.NodeRootVariable
+  ------
+2020/04/18 13:29:48 [DEBUG] Starting graph walk: walkValidate
+2020/04/18 13:29:48 [TRACE] dag/walk: updating graph
+2020/04/18 13:29:48 [TRACE] dag/walk: added new vertex: "root"
+2020/04/18 13:29:48 [TRACE] dag/walk: added new vertex: "azurerm_resource_group.example"
+2020/04/18 13:29:48 [TRACE] dag/walk: added new vertex: "provider.azurerm"
+2020/04/18 13:29:48 [TRACE] dag/walk: added new vertex: "meta.count-boundary (EachMode fixup)"
+2020/04/18 13:29:48 [TRACE] dag/walk: added new vertex: "provider.azurerm (close)"
+2020/04/18 13:29:48 [TRACE] dag/walk: added new vertex: "azurerm_template_deployment.terraform-arm"
+2020/04/18 13:29:48 [TRACE] dag/walk: added new vertex: "var.Tenant_id"
+2020/04/18 13:29:48 [TRACE] dag/walk: added new vertex: "var.Subscription_id"
+2020/04/18 13:29:48 [TRACE] dag/walk: added new vertex: "var.Client_id"
+2020/04/18 13:29:48 [TRACE] dag/walk: added new vertex: "var.Client_secret"
+2020/04/18 13:29:48 [TRACE] dag/walk: added edge: "provider.azurerm" waiting on "var.Client_secret"
+2020/04/18 13:29:48 [TRACE] dag/walk: added edge: "root" waiting on "provider.azurerm (close)"
+2020/04/18 13:29:48 [TRACE] dag/walk: added edge: "azurerm_resource_group.example" waiting on "provider.azurerm"
+2020/04/18 13:29:48 [TRACE] dag/walk: added edge: "provider.azurerm" waiting on "var.Subscription_id"
+2020/04/18 13:29:48 [TRACE] dag/walk: added edge: "azurerm_template_deployment.terraform-arm" waiting on "provider.azurerm"
+2020/04/18 13:29:48 [TRACE] dag/walk: added edge: "provider.azurerm" waiting on "var.Tenant_id"
+2020/04/18 13:29:48 [TRACE] dag/walk: added edge: "provider.azurerm (close)" waiting on "azurerm_template_deployment.terraform-arm"
+2020/04/18 13:29:48 [TRACE] dag/walk: added edge: "provider.azurerm" waiting on "var.Client_id"
+2020/04/18 13:29:48 [TRACE] dag/walk: added edge: "root" waiting on "meta.count-boundary (EachMode fixup)"
+2020/04/18 13:29:48 [TRACE] dag/walk: added edge: "meta.count-boundary (EachMode fixup)" waiting on "azurerm_resource_group.example"
+2020/04/18 13:29:48 [TRACE] dag/walk: added edge: "meta.count-boundary (EachMode fixup)" waiting on "azurerm_template_deployment.terraform-arm"
+2020/04/18 13:29:48 [TRACE] dag/walk: added edge: "provider.azurerm (close)" waiting on "azurerm_resource_group.example"
+2020/04/18 13:29:48 [TRACE] dag/walk: dependencies changed for "azurerm_template_deployment.terraform-arm", sending new deps
+2020/04/18 13:29:48 [TRACE] dag/walk: dependencies changed for "provider.azurerm (close)", sending new deps
+2020/04/18 13:29:48 [TRACE] dag/walk: dependencies changed for "meta.count-boundary (EachMode fixup)", sending new deps
+2020/04/18 13:29:48 [TRACE] dag/walk: dependencies changed for "provider.azurerm", sending new deps
+2020/04/18 13:29:48 [TRACE] dag/walk: dependencies changed for "root", sending new deps
+2020/04/18 13:29:48 [TRACE] dag/walk: dependencies changed for "azurerm_resource_group.example", sending new deps
+2020/04/18 13:29:48 [TRACE] dag/walk: visiting "var.Tenant_id"
+2020/04/18 13:29:48 [TRACE] vertex "var.Tenant_id": starting visit (*terraform.NodeRootVariable)
+2020/04/18 13:29:48 [TRACE] vertex "var.Tenant_id": evaluating
+2020/04/18 13:29:48 [TRACE] [walkValidate] Entering eval tree: var.Tenant_id
+2020/04/18 13:29:48 [TRACE] <root>: eval: *terraform.EvalSequence
+2020/04/18 13:29:48 [TRACE] [walkValidate] Exiting eval tree: var.Tenant_id
+2020/04/18 13:29:48 [TRACE] vertex "var.Tenant_id": visit complete
+2020/04/18 13:29:48 [TRACE] dag/walk: visiting "var.Subscription_id"
+2020/04/18 13:29:48 [TRACE] vertex "var.Subscription_id": starting visit (*terraform.NodeRootVariable)
+2020/04/18 13:29:48 [TRACE] vertex "var.Subscription_id": evaluating
+2020/04/18 13:29:48 [TRACE] [walkValidate] Entering eval tree: var.Subscription_id
+2020/04/18 13:29:48 [TRACE] <root>: eval: *terraform.EvalSequence
+2020/04/18 13:29:48 [TRACE] [walkValidate] Exiting eval tree: var.Subscription_id
+2020/04/18 13:29:48 [TRACE] vertex "var.Subscription_id": visit complete
+2020/04/18 13:29:48 [TRACE] dag/walk: visiting "var.Client_id"
+2020/04/18 13:29:48 [TRACE] vertex "var.Client_id": starting visit (*terraform.NodeRootVariable)
+2020/04/18 13:29:48 [TRACE] vertex "var.Client_id": evaluating
+2020/04/18 13:29:48 [TRACE] [walkValidate] Entering eval tree: var.Client_id
+2020/04/18 13:29:48 [TRACE] <root>: eval: *terraform.EvalSequence
+2020/04/18 13:29:48 [TRACE] [walkValidate] Exiting eval tree: var.Client_id
+2020/04/18 13:29:48 [TRACE] vertex "var.Client_id": visit complete
+2020/04/18 13:29:48 [TRACE] dag/walk: visiting "var.Client_secret"
+2020/04/18 13:29:48 [TRACE] vertex "var.Client_secret": starting visit (*terraform.NodeRootVariable)
+2020/04/18 13:29:48 [TRACE] vertex "var.Client_secret": evaluating
+2020/04/18 13:29:48 [TRACE] [walkValidate] Entering eval tree: var.Client_secret
+2020/04/18 13:29:48 [TRACE] <root>: eval: *terraform.EvalSequence
+2020/04/18 13:29:48 [TRACE] [walkValidate] Exiting eval tree: var.Client_secret
+2020/04/18 13:29:48 [TRACE] vertex "var.Client_secret": visit complete
+2020/04/18 13:29:48 [TRACE] dag/walk: visiting "provider.azurerm"
+2020/04/18 13:29:48 [TRACE] vertex "provider.azurerm": starting visit (*terraform.NodeApplyableProvider)
+2020/04/18 13:29:48 [TRACE] vertex "provider.azurerm": evaluating
+2020/04/18 13:29:48 [TRACE] [walkValidate] Entering eval tree: provider.azurerm
+2020/04/18 13:29:48 [TRACE] <root>: eval: *terraform.EvalSequence
+2020/04/18 13:29:48 [TRACE] <root>: eval: *terraform.EvalInitProvider
+2020-04-18T13:29:48.893+0530 [INFO]  plugin: configuring client automatic mTLS
+2020-04-18T13:29:48.940+0530 [DEBUG] plugin: starting plugin: path=C:\Users\Administrator\Desktop\test\Terraform-Practice\.terraform\plugins\windows_amd64\terraform-provider-azurerm_v1.44.0_x4.exe args=[C:\Users\Administrator\Desktop\test\Terraform-Practice\.terraform\plugins\windows_amd64\terraform-provider-azurerm_v1.44.0_x4.exe]
+2020-04-18T13:29:48.949+0530 [DEBUG] plugin: plugin started: path=C:\Users\Administrator\Desktop\test\Terraform-Practice\.terraform\plugins\windows_amd64\terraform-provider-azurerm_v1.44.0_x4.exe pid=6096
+2020-04-18T13:29:48.949+0530 [DEBUG] plugin: waiting for RPC address: path=C:\Users\Administrator\Desktop\test\Terraform-Practice\.terraform\plugins\windows_amd64\terraform-provider-azurerm_v1.44.0_x4.exe
+2020-04-18T13:29:50.399+0530 [INFO]  plugin.terraform-provider-azurerm_v1.44.0_x4.exe: configuring server automatic mTLS: timestamp=2020-04-18T13:29:50.397+0530
+2020-04-18T13:29:50.450+0530 [DEBUG] plugin.terraform-provider-azurerm_v1.44.0_x4.exe: plugin address: address=127.0.0.1:10000 network=tcp timestamp=2020-04-18T13:29:50.450+0530
+2020-04-18T13:29:50.450+0530 [DEBUG] plugin: using plugin: version=5
+2020/04/18 13:29:50 [TRACE] BuiltinEvalContext: Initialized "azurerm" provider for provider.azurerm
+2020/04/18 13:29:50 [TRACE] <root>: eval: terraform.EvalNoop
+2020/04/18 13:29:50 [TRACE] <root>: eval: *terraform.EvalOpFilter
+2020/04/18 13:29:50 [TRACE] <root>: eval: *terraform.EvalSequence
+2020/04/18 13:29:50 [TRACE] <root>: eval: *terraform.EvalGetProvider
+2020/04/18 13:29:50 [TRACE] <root>: eval: *terraform.EvalValidateProvider
+2020/04/18 13:29:50 [TRACE] buildProviderConfig for provider.azurerm: using explicit config only
+2020/04/18 13:29:50 [TRACE] GRPCProvider: GetSchema
+2020/04/18 13:29:50 [TRACE] GRPCProvider: PrepareProviderConfig
+2020/04/18 13:29:50 [TRACE] <root>: eval: terraform.EvalNoop
+2020/04/18 13:29:50 [TRACE] <root>: eval: terraform.EvalNoop
+2020/04/18 13:29:50 [TRACE] [walkValidate] Exiting eval tree: provider.azurerm
+2020/04/18 13:29:50 [TRACE] vertex "provider.azurerm": visit complete
+2020/04/18 13:29:50 [TRACE] dag/walk: visiting "azurerm_template_deployment.terraform-arm"
+2020/04/18 13:29:50 [TRACE] vertex "azurerm_template_deployment.terraform-arm": starting visit (*terraform.NodeValidatableResource)
+2020/04/18 13:29:50 [TRACE] dag/walk: visiting "azurerm_resource_group.example"
+2020/04/18 13:29:50 [TRACE] vertex "azurerm_resource_group.example": starting visit (*terraform.NodeValidatableResource)
+2020/04/18 13:29:50 [TRACE] vertex "azurerm_template_deployment.terraform-arm": evaluating
+2020/04/18 13:29:50 [TRACE] vertex "azurerm_resource_group.example": evaluating
+2020/04/18 13:29:50 [TRACE] [walkValidate] Entering eval tree: azurerm_template_deployment.terraform-arm
+2020/04/18 13:29:50 [TRACE] [walkValidate] Entering eval tree: azurerm_resource_group.example
+2020/04/18 13:29:50 [TRACE] <root>: eval: *terraform.EvalSequence
+2020/04/18 13:29:50 [TRACE] <root>: eval: *terraform.EvalGetProvider
+2020/04/18 13:29:50 [TRACE] <root>: eval: *terraform.EvalValidateResource
+2020/04/18 13:29:50 [TRACE] <root>: eval: *terraform.EvalSequence
+2020/04/18 13:29:50 [TRACE] <root>: eval: *terraform.EvalGetProvider
+2020/04/18 13:29:50 [TRACE] <root>: eval: *terraform.EvalValidateResource
+2020/04/18 13:29:50 [TRACE] GRPCProvider: ValidateResourceTypeConfig
+2020/04/18 13:29:50 [TRACE] GRPCProvider: ValidateResourceTypeConfig
+2020/04/18 13:29:50 [TRACE] [walkValidate] Exiting eval tree: azurerm_resource_group.example
+2020/04/18 13:29:50 [TRACE] vertex "azurerm_resource_group.example": visit complete
+2020/04/18 13:29:50 [TRACE] [walkValidate] Exiting eval tree: azurerm_template_deployment.terraform-arm
+2020/04/18 13:29:50 [TRACE] vertex "azurerm_template_deployment.terraform-arm": visit complete
+2020/04/18 13:29:50 [TRACE] dag/walk: visiting "meta.count-boundary (EachMode fixup)"
+2020/04/18 13:29:50 [TRACE] dag/walk: visiting "provider.azurerm (close)"
+2020/04/18 13:29:50 [TRACE] vertex "provider.azurerm (close)": starting visit (*terraform.graphNodeCloseProvider)
+2020/04/18 13:29:50 [TRACE] vertex "provider.azurerm (close)": evaluating
+2020/04/18 13:29:50 [TRACE] [walkValidate] Entering eval tree: provider.azurerm (close)
+2020/04/18 13:29:50 [TRACE] <root>: eval: *terraform.EvalCloseProvider
+2020/04/18 13:29:50 [TRACE] GRPCProvider: Close
+2020/04/18 13:29:50 [TRACE] vertex "meta.count-boundary (EachMode fixup)": starting visit (*terraform.NodeCountBoundary)
+2020/04/18 13:29:50 [TRACE] vertex "meta.count-boundary (EachMode fixup)": evaluating
+2020/04/18 13:29:50 [TRACE] [walkValidate] Entering eval tree: meta.count-boundary (EachMode fixup)
+2020/04/18 13:29:50 [TRACE] <root>: eval: *terraform.EvalCountFixZeroOneBoundaryGlobal
+2020/04/18 13:29:50 [TRACE] [walkValidate] Exiting eval tree: meta.count-boundary (EachMode fixup)
+2020/04/18 13:29:50 [TRACE] vertex "meta.count-boundary (EachMode fixup)": visit complete
+2020-04-18T13:29:50.813+0530 [DEBUG] plugin: plugin process exited: path=C:\Users\Administrator\Desktop\test\Terraform-Practice\.terraform\plugins\windows_amd64\terraform-provider-azurerm_v1.44.0_x4.exe pid=6096
+2020-04-18T13:29:50.813+0530 [DEBUG] plugin: plugin exited
+2020/04/18 13:29:50 [TRACE] [walkValidate] Exiting eval tree: provider.azurerm (close)
+2020/04/18 13:29:50 [TRACE] vertex "provider.azurerm (close)": visit complete
+2020/04/18 13:29:50 [TRACE] dag/walk: visiting "root"
+2020/04/18 13:29:50 [TRACE] vertex "root": starting visit (terraform.graphNodeRoot)
+2020/04/18 13:29:50 [TRACE] vertex "root": visit complete
+2020/04/18 13:29:50 [INFO] backend/local: plan calling Refresh
+2020/04/18 13:29:50 [INFO] terraform: building graph: GraphTypeRefresh
+2020/04/18 13:29:50 [TRACE] No managed resources in state during refresh; skipping managed resource transformer
+2020/04/18 13:29:50 [TRACE] Executing graph transform *terraform.ConfigTransformer
+2020/04/18 13:29:50 [TRACE] ConfigTransformer: Starting for path: 
+2020/04/18 13:29:50 [TRACE] Completed graph transform *terraform.ConfigTransformer (no changes)
+2020/04/18 13:29:50 [TRACE] Executing graph transform *terraform.OrphanResourceInstanceTransformer
+2020/04/18 13:29:50 [TRACE] Completed graph transform *terraform.OrphanResourceInstanceTransformer (no changes)
+2020/04/18 13:29:50 [TRACE] Executing graph transform *terraform.StateTransformer
+2020/04/18 13:29:50 [TRACE] StateTransformer: state is empty, so nothing to do
+2020/04/18 13:29:50 [TRACE] Completed graph transform *terraform.StateTransformer (no changes)
+2020/04/18 13:29:50 [TRACE] Executing graph transform *terraform.AttachStateTransformer
+2020/04/18 13:29:50 [TRACE] Completed graph transform *terraform.AttachStateTransformer (no changes)
+2020/04/18 13:29:50 [TRACE] Executing graph transform *terraform.AttachResourceConfigTransformer
+2020/04/18 13:29:50 [TRACE] Completed graph transform *terraform.AttachResourceConfigTransformer (no changes)
+2020/04/18 13:29:50 [TRACE] Executing graph transform *terraform.RootVariableTransformer
+2020/04/18 13:29:50 [TRACE] Completed graph transform *terraform.RootVariableTransformer with new graph:
+  var.Client_id - *terraform.NodeRootVariable
+  var.Client_secret - *terraform.NodeRootVariable
+  var.Subscription_id - *terraform.NodeRootVariable
+  var.Tenant_id - *terraform.NodeRootVariable
+  ------
+2020/04/18 13:29:50 [TRACE] Executing graph transform *terraform.LocalTransformer
+2020/04/18 13:29:50 [TRACE] Completed graph transform *terraform.LocalTransformer (no changes)
+2020/04/18 13:29:50 [TRACE] Executing graph transform *terraform.OutputTransformer
+2020/04/18 13:29:50 [TRACE] Completed graph transform *terraform.OutputTransformer (no changes)
+2020/04/18 13:29:50 [TRACE] Executing graph transform *terraform.ModuleVariableTransformer
+2020/04/18 13:29:50 [TRACE] Completed graph transform *terraform.ModuleVariableTransformer (no changes)
+2020/04/18 13:29:50 [TRACE] Executing graph transform *terraform.graphTransformerMulti
+2020/04/18 13:29:50 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.ProviderConfigTransformer
+2020/04/18 13:29:50 [TRACE] ProviderConfigTransformer: attaching to "provider.azurerm" provider configuration from provider.tf:1,1-19
+2020/04/18 13:29:50 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.ProviderConfigTransformer with new graph:
+  provider.azurerm - *terraform.NodeApplyableProvider
+  var.Client_id - *terraform.NodeRootVariable
+  var.Client_secret - *terraform.NodeRootVariable
+  var.Subscription_id - *terraform.NodeRootVariable
+  var.Tenant_id - *terraform.NodeRootVariable
+  ------
+2020/04/18 13:29:50 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.MissingProviderTransformer
+2020/04/18 13:29:50 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.MissingProviderTransformer (no changes)
+2020/04/18 13:29:50 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.ProviderTransformer
+2020/04/18 13:29:50 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.ProviderTransformer (no changes)
+2020/04/18 13:29:50 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.PruneProviderTransformer
+2020/04/18 13:29:50 [DEBUG] pruning unused provider.azurerm
+2020/04/18 13:29:50 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.PruneProviderTransformer with new graph:
+  var.Client_id - *terraform.NodeRootVariable
+  var.Client_secret - *terraform.NodeRootVariable
+  var.Subscription_id - *terraform.NodeRootVariable
+  var.Tenant_id - *terraform.NodeRootVariable
+  ------
+2020/04/18 13:29:50 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.ParentProviderTransformer
+2020/04/18 13:29:50 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.ParentProviderTransformer (no changes)
+2020/04/18 13:29:50 [TRACE] Completed graph transform *terraform.graphTransformerMulti (no changes)
+2020/04/18 13:29:50 [TRACE] Executing graph transform *terraform.AttachSchemaTransformer
+2020/04/18 13:29:50 [TRACE] Completed graph transform *terraform.AttachSchemaTransformer (no changes)
+2020/04/18 13:29:50 [TRACE] Executing graph transform *terraform.ReferenceTransformer
+2020/04/18 13:29:50 [DEBUG] ReferenceTransformer: "var.Client_secret" references: []
+2020/04/18 13:29:50 [DEBUG] ReferenceTransformer: "var.Tenant_id" references: []
+2020/04/18 13:29:50 [DEBUG] ReferenceTransformer: "var.Subscription_id" references: []
+2020/04/18 13:29:50 [DEBUG] ReferenceTransformer: "var.Client_id" references: []
+2020/04/18 13:29:50 [TRACE] Completed graph transform *terraform.ReferenceTransformer (no changes)
+2020/04/18 13:29:50 [TRACE] Executing graph transform *terraform.AttachDependenciesTransformer
+2020/04/18 13:29:50 [TRACE] Completed graph transform *terraform.AttachDependenciesTransformer (no changes)
+2020/04/18 13:29:50 [TRACE] Executing graph transform *terraform.TargetsTransformer
+2020/04/18 13:29:50 [TRACE] Completed graph transform *terraform.TargetsTransformer (no changes)
+2020/04/18 13:29:50 [TRACE] Executing graph transform *terraform.CloseProviderTransformer
+2020/04/18 13:29:50 [TRACE] Completed graph transform *terraform.CloseProviderTransformer (no changes)
+2020/04/18 13:29:50 [TRACE] Executing graph transform *terraform.RootTransformer
+2020/04/18 13:29:50 [TRACE] Completed graph transform *terraform.RootTransformer with new graph:
+  root - terraform.graphNodeRoot
+    var.Client_id - *terraform.NodeRootVariable
+    var.Client_secret - *terraform.NodeRootVariable
+    var.Subscription_id - *terraform.NodeRootVariable
+    var.Tenant_id - *terraform.NodeRootVariable
+  var.Client_id - *terraform.NodeRootVariable
+  var.Client_secret - *terraform.NodeRootVariable
+  var.Subscription_id - *terraform.NodeRootVariable
+  var.Tenant_id - *terraform.NodeRootVariable
+  ------
+2020/04/18 13:29:50 [TRACE] Executing graph transform *terraform.TransitiveReductionTransformer
+2020/04/18 13:29:50 [TRACE] Completed graph transform *terraform.TransitiveReductionTransformer (no changes)
+2020/04/18 13:29:50 [DEBUG] Starting graph walk: walkRefresh
+2020/04/18 13:29:50 [TRACE] dag/walk: updating graph
+2020/04/18 13:29:50 [TRACE] dag/walk: added new vertex: "var.Tenant_id"
+2020/04/18 13:29:50 [TRACE] dag/walk: added new vertex: "var.Subscription_id"
+2020/04/18 13:29:50 [TRACE] dag/walk: added new vertex: "root"
+2020/04/18 13:29:50 [TRACE] dag/walk: added new vertex: "var.Client_id"
+2020/04/18 13:29:50 [TRACE] dag/walk: added new vertex: "var.Client_secret"
+2020/04/18 13:29:50 [TRACE] dag/walk: added edge: "root" waiting on "var.Client_id"
+2020/04/18 13:29:50 [TRACE] dag/walk: added edge: "root" waiting on "var.Client_secret"
+2020/04/18 13:29:50 [TRACE] dag/walk: added edge: "root" waiting on "var.Tenant_id"
+2020/04/18 13:29:50 [TRACE] dag/walk: added edge: "root" waiting on "var.Subscription_id"
+2020/04/18 13:29:50 [TRACE] dag/walk: dependencies changed for "root", sending new deps
+2020/04/18 13:29:50 [TRACE] dag/walk: visiting "var.Client_id"
+2020/04/18 13:29:50 [TRACE] vertex "var.Client_id": starting visit (*terraform.NodeRootVariable)
+2020/04/18 13:29:50 [TRACE] vertex "var.Client_id": evaluating
+2020/04/18 13:29:50 [TRACE] [walkRefresh] Entering eval tree: var.Client_id
+2020/04/18 13:29:50 [TRACE] <root>: eval: *terraform.EvalSequence
+2020/04/18 13:29:50 [TRACE] [walkRefresh] Exiting eval tree: var.Client_id
+2020/04/18 13:29:50 [TRACE] vertex "var.Client_id": visit complete
+2020/04/18 13:29:50 [TRACE] dag/walk: visiting "var.Client_secret"
+2020/04/18 13:29:50 [TRACE] vertex "var.Client_secret": starting visit (*terraform.NodeRootVariable)
+2020/04/18 13:29:50 [TRACE] vertex "var.Client_secret": evaluating
+2020/04/18 13:29:50 [TRACE] [walkRefresh] Entering eval tree: var.Client_secret
+2020/04/18 13:29:50 [TRACE] <root>: eval: *terraform.EvalSequence
+2020/04/18 13:29:50 [TRACE] [walkRefresh] Exiting eval tree: var.Client_secret
+2020/04/18 13:29:50 [TRACE] vertex "var.Client_secret": visit complete
+2020/04/18 13:29:50 [TRACE] dag/walk: visiting "var.Tenant_id"
+2020/04/18 13:29:50 [TRACE] vertex "var.Tenant_id": starting visit (*terraform.NodeRootVariable)
+2020/04/18 13:29:50 [TRACE] vertex "var.Tenant_id": evaluating
+2020/04/18 13:29:50 [TRACE] [walkRefresh] Entering eval tree: var.Tenant_id
+2020/04/18 13:29:50 [TRACE] <root>: eval: *terraform.EvalSequence
+2020/04/18 13:29:50 [TRACE] [walkRefresh] Exiting eval tree: var.Tenant_id
+2020/04/18 13:29:50 [TRACE] vertex "var.Tenant_id": visit complete
+2020/04/18 13:29:50 [TRACE] dag/walk: visiting "var.Subscription_id"
+2020/04/18 13:29:50 [TRACE] vertex "var.Subscription_id": starting visit (*terraform.NodeRootVariable)
+2020/04/18 13:29:50 [TRACE] vertex "var.Subscription_id": evaluating
+2020/04/18 13:29:50 [TRACE] [walkRefresh] Entering eval tree: var.Subscription_id
+2020/04/18 13:29:50 [TRACE] <root>: eval: *terraform.EvalSequence
+2020/04/18 13:29:50 [TRACE] [walkRefresh] Exiting eval tree: var.Subscription_id
+2020/04/18 13:29:50 [TRACE] vertex "var.Subscription_id": visit complete
+2020/04/18 13:29:50 [TRACE] dag/walk: visiting "root"
+2020/04/18 13:29:50 [TRACE] vertex "root": starting visit (terraform.graphNodeRoot)
+2020/04/18 13:29:50 [TRACE] vertex "root": visit complete
+2020/04/18 13:29:50 [INFO] backend/local: plan calling Plan
+2020/04/18 13:29:50 [INFO] terraform: building graph: GraphTypePlan
+2020/04/18 13:29:50 [TRACE] Executing graph transform *terraform.ConfigTransformer
+2020/04/18 13:29:50 [TRACE] ConfigTransformer: Starting for path: 
+2020/04/18 13:29:50 [TRACE] Completed graph transform *terraform.ConfigTransformer with new graph:
+  azurerm_resource_group.example - *terraform.NodePlannableResource
+  azurerm_template_deployment.terraform-arm - *terraform.NodePlannableResource
+  ------
+2020/04/18 13:29:50 [TRACE] Executing graph transform *terraform.LocalTransformer
+2020/04/18 13:29:50 [TRACE] Completed graph transform *terraform.LocalTransformer (no changes)
+2020/04/18 13:29:50 [TRACE] Executing graph transform *terraform.OutputTransformer
+2020/04/18 13:29:50 [TRACE] Completed graph transform *terraform.OutputTransformer (no changes)
+2020/04/18 13:29:50 [TRACE] Executing graph transform *terraform.OrphanResourceInstanceTransformer
+2020/04/18 13:29:50 [TRACE] Completed graph transform *terraform.OrphanResourceInstanceTransformer (no changes)
+2020/04/18 13:29:50 [TRACE] Executing graph transform *terraform.StateTransformer
+2020/04/18 13:29:50 [TRACE] StateTransformer: state is empty, so nothing to do
+2020/04/18 13:29:50 [TRACE] Completed graph transform *terraform.StateTransformer (no changes)
+2020/04/18 13:29:50 [TRACE] Executing graph transform *terraform.OrphanOutputTransformer
+2020/04/18 13:29:50 [TRACE] Completed graph transform *terraform.OrphanOutputTransformer (no changes)
+2020/04/18 13:29:50 [TRACE] Executing graph transform *terraform.AttachResourceConfigTransformer
+2020/04/18 13:29:50 [TRACE] AttachResourceConfigTransformer: attaching to "azurerm_resource_group.example" (*terraform.NodePlannableResource) config from instance.tf:1,1-44
+2020/04/18 13:29:50 [TRACE] AttachResourceConfigTransformer: attaching to "azurerm_template_deployment.terraform-arm" (*terraform.NodePlannableResource) config from instance.tf:5,1-55
+2020/04/18 13:29:50 [TRACE] Completed graph transform *terraform.AttachResourceConfigTransformer (no changes)
+2020/04/18 13:29:50 [TRACE] Executing graph transform *terraform.AttachStateTransformer
+2020/04/18 13:29:50 [TRACE] Completed graph transform *terraform.AttachStateTransformer (no changes)
+2020/04/18 13:29:50 [TRACE] Executing graph transform *terraform.RootVariableTransformer
+2020/04/18 13:29:50 [TRACE] Completed graph transform *terraform.RootVariableTransformer with new graph:
+  azurerm_resource_group.example - *terraform.NodePlannableResource
+  azurerm_template_deployment.terraform-arm - *terraform.NodePlannableResource
+  var.Client_id - *terraform.NodeRootVariable
+  var.Client_secret - *terraform.NodeRootVariable
+  var.Subscription_id - *terraform.NodeRootVariable
+  var.Tenant_id - *terraform.NodeRootVariable
+  ------
+2020/04/18 13:29:50 [TRACE] Executing graph transform *terraform.MissingProvisionerTransformer
+2020/04/18 13:29:50 [TRACE] Completed graph transform *terraform.MissingProvisionerTransformer (no changes)
+2020/04/18 13:29:50 [TRACE] Executing graph transform *terraform.ProvisionerTransformer
+2020/04/18 13:29:50 [TRACE] Completed graph transform *terraform.ProvisionerTransformer (no changes)
+2020/04/18 13:29:50 [TRACE] Executing graph transform *terraform.ModuleVariableTransformer
+2020/04/18 13:29:50 [TRACE] Completed graph transform *terraform.ModuleVariableTransformer (no changes)
+2020/04/18 13:29:50 [TRACE] Executing graph transform *terraform.graphTransformerMulti
+2020/04/18 13:29:50 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.ProviderConfigTransformer
+2020/04/18 13:29:50 [TRACE] ProviderConfigTransformer: attaching to "provider.azurerm" provider configuration from provider.tf:1,1-19
+2020/04/18 13:29:50 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.ProviderConfigTransformer with new graph:
+  azurerm_resource_group.example - *terraform.NodePlannableResource
+  azurerm_template_deployment.terraform-arm - *terraform.NodePlannableResource
+  provider.azurerm - *terraform.NodeApplyableProvider
+  var.Client_id - *terraform.NodeRootVariable
+  var.Client_secret - *terraform.NodeRootVariable
+  var.Subscription_id - *terraform.NodeRootVariable
+  var.Tenant_id - *terraform.NodeRootVariable
+  ------
+2020/04/18 13:29:50 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.MissingProviderTransformer
+2020/04/18 13:29:50 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.MissingProviderTransformer (no changes)
+2020/04/18 13:29:50 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.ProviderTransformer
+2020/04/18 13:29:50 [TRACE] ProviderTransformer: azurerm_resource_group.example is provided by provider.azurerm or inherited equivalent
+2020/04/18 13:29:50 [TRACE] ProviderTransformer: azurerm_template_deployment.terraform-arm is provided by provider.azurerm or inherited equivalent
+2020/04/18 13:29:50 [TRACE] ProviderTransformer: exact match for provider.azurerm serving azurerm_resource_group.example
+2020/04/18 13:29:50 [DEBUG] ProviderTransformer: "azurerm_resource_group.example" (*terraform.NodePlannableResource) needs provider.azurerm
+2020/04/18 13:29:50 [TRACE] ProviderTransformer: exact match for provider.azurerm serving azurerm_template_deployment.terraform-arm
+2020/04/18 13:29:50 [DEBUG] ProviderTransformer: "azurerm_template_deployment.terraform-arm" (*terraform.NodePlannableResource) needs provider.azurerm
+2020/04/18 13:29:50 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.ProviderTransformer with new graph:
+  azurerm_resource_group.example - *terraform.NodePlannableResource
+    provider.azurerm - *terraform.NodeApplyableProvider
+  azurerm_template_deployment.terraform-arm - *terraform.NodePlannableResource
+    provider.azurerm - *terraform.NodeApplyableProvider
+  provider.azurerm - *terraform.NodeApplyableProvider
+  var.Client_id - *terraform.NodeRootVariable
+  var.Client_secret - *terraform.NodeRootVariable
+  var.Subscription_id - *terraform.NodeRootVariable
+  var.Tenant_id - *terraform.NodeRootVariable
+  ------
+2020/04/18 13:29:50 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.PruneProviderTransformer
+2020/04/18 13:29:50 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.PruneProviderTransformer (no changes)
+2020/04/18 13:29:50 [TRACE] (graphTransformerMulti) Executing graph transform *terraform.ParentProviderTransformer
+2020/04/18 13:29:50 [TRACE] (graphTransformerMulti) Completed graph transform *terraform.ParentProviderTransformer (no changes)
+2020/04/18 13:29:50 [TRACE] Completed graph transform *terraform.graphTransformerMulti with new graph:
+  azurerm_resource_group.example - *terraform.NodePlannableResource
+    provider.azurerm - *terraform.NodeApplyableProvider
+  azurerm_template_deployment.terraform-arm - *terraform.NodePlannableResource
+    provider.azurerm - *terraform.NodeApplyableProvider
+  provider.azurerm - *terraform.NodeApplyableProvider
+  var.Client_id - *terraform.NodeRootVariable
+  var.Client_secret - *terraform.NodeRootVariable
+  var.Subscription_id - *terraform.NodeRootVariable
+  var.Tenant_id - *terraform.NodeRootVariable
+  ------
+2020/04/18 13:29:50 [TRACE] Executing graph transform *terraform.RemovedModuleTransformer
+2020/04/18 13:29:50 [TRACE] Completed graph transform *terraform.RemovedModuleTransformer (no changes)
+2020/04/18 13:29:50 [TRACE] Executing graph transform *terraform.AttachSchemaTransformer
+2020/04/18 13:29:50 [TRACE] AttachSchemaTransformer: attaching provider config schema to provider.azurerm
+2020/04/18 13:29:50 [TRACE] AttachSchemaTransformer: attaching resource schema to azurerm_resource_group.example
+2020/04/18 13:29:50 [TRACE] AttachSchemaTransformer: attaching resource schema to azurerm_template_deployment.terraform-arm
+2020/04/18 13:29:50 [TRACE] Completed graph transform *terraform.AttachSchemaTransformer (no changes)
+2020/04/18 13:29:50 [TRACE] Executing graph transform *terraform.ReferenceTransformer
+2020/04/18 13:29:50 [DEBUG] ReferenceTransformer: "azurerm_resource_group.example" references: []
+2020/04/18 13:29:50 [DEBUG] ReferenceTransformer: "azurerm_template_deployment.terraform-arm" references: []
+2020/04/18 13:29:50 [DEBUG] ReferenceTransformer: "var.Subscription_id" references: []
+2020/04/18 13:29:50 [DEBUG] ReferenceTransformer: "var.Client_id" references: []
+2020/04/18 13:29:50 [DEBUG] ReferenceTransformer: "var.Client_secret" references: []
+2020/04/18 13:29:50 [DEBUG] ReferenceTransformer: "var.Tenant_id" references: []
+2020/04/18 13:29:50 [DEBUG] ReferenceTransformer: "provider.azurerm" references: [var.Client_id var.Client_secret var.Subscription_id var.Tenant_id]
+2020/04/18 13:29:50 [TRACE] Completed graph transform *terraform.ReferenceTransformer with new graph:
+  azurerm_resource_group.example - *terraform.NodePlannableResource
+    provider.azurerm - *terraform.NodeApplyableProvider
+  azurerm_template_deployment.terraform-arm - *terraform.NodePlannableResource
+    provider.azurerm - *terraform.NodeApplyableProvider
+  provider.azurerm - *terraform.NodeApplyableProvider
+    var.Client_id - *terraform.NodeRootVariable
+    var.Client_secret - *terraform.NodeRootVariable
+    var.Subscription_id - *terraform.NodeRootVariable
+    var.Tenant_id - *terraform.NodeRootVariable
+  var.Client_id - *terraform.NodeRootVariable
+  var.Client_secret - *terraform.NodeRootVariable
+  var.Subscription_id - *terraform.NodeRootVariable
+  var.Tenant_id - *terraform.NodeRootVariable
+  ------
+2020/04/18 13:29:50 [TRACE] Executing graph transform *terraform.CountBoundaryTransformer
+2020/04/18 13:29:50 [TRACE] Completed graph transform *terraform.CountBoundaryTransformer with new graph:
+  azurerm_resource_group.example - *terraform.NodePlannableResource
+    provider.azurerm - *terraform.NodeApplyableProvider
+  azurerm_template_deployment.terraform-arm - *terraform.NodePlannableResource
+    provider.azurerm - *terraform.NodeApplyableProvider
+  meta.count-boundary (EachMode fixup) - *terraform.NodeCountBoundary
+    azurerm_resource_group.example - *terraform.NodePlannableResource
+    azurerm_template_deployment.terraform-arm - *terraform.NodePlannableResource
+    provider.azurerm - *terraform.NodeApplyableProvider
+    var.Client_id - *terraform.NodeRootVariable
+    var.Client_secret - *terraform.NodeRootVariable
+    var.Subscription_id - *terraform.NodeRootVariable
+    var.Tenant_id - *terraform.NodeRootVariable
+  provider.azurerm - *terraform.NodeApplyableProvider
+    var.Client_id - *terraform.NodeRootVariable
+    var.Client_secret - *terraform.NodeRootVariable
+    var.Subscription_id - *terraform.NodeRootVariable
+    var.Tenant_id - *terraform.NodeRootVariable
+  var.Client_id - *terraform.NodeRootVariable
+  var.Client_secret - *terraform.NodeRootVariable
+  var.Subscription_id - *terraform.NodeRootVariable
+  var.Tenant_id - *terraform.NodeRootVariable
+  ------
+2020/04/18 13:29:50 [TRACE] Executing graph transform *terraform.TargetsTransformer
+2020/04/18 13:29:50 [TRACE] Completed graph transform *terraform.TargetsTransformer (no changes)
+2020/04/18 13:29:50 [TRACE] Executing graph transform *terraform.ForcedCBDTransformer
+2020/04/18 13:29:50 [TRACE] ForcedCBDTransformer: "azurerm_resource_group.example" (*terraform.NodePlannableResource) has no CBD descendent, so skipping
+2020/04/18 13:29:50 [TRACE] ForcedCBDTransformer: "azurerm_template_deployment.terraform-arm" (*terraform.NodePlannableResource) has no CBD descendent, so skipping
+2020/04/18 13:29:50 [TRACE] Completed graph transform *terraform.ForcedCBDTransformer (no changes)
+2020/04/18 13:29:50 [TRACE] Executing graph transform *terraform.CloseProviderTransformer
+2020/04/18 13:29:50 [TRACE] Completed graph transform *terraform.CloseProviderTransformer with new graph:
+  azurerm_resource_group.example - *terraform.NodePlannableResource
+    provider.azurerm - *terraform.NodeApplyableProvider
+  azurerm_template_deployment.terraform-arm - *terraform.NodePlannableResource
+    provider.azurerm - *terraform.NodeApplyableProvider
+  meta.count-boundary (EachMode fixup) - *terraform.NodeCountBoundary
+    azurerm_resource_group.example - *terraform.NodePlannableResource
+    azurerm_template_deployment.terraform-arm - *terraform.NodePlannableResource
+    provider.azurerm - *terraform.NodeApplyableProvider
+    var.Client_id - *terraform.NodeRootVariable
+    var.Client_secret - *terraform.NodeRootVariable
+    var.Subscription_id - *terraform.NodeRootVariable
+    var.Tenant_id - *terraform.NodeRootVariable
+  provider.azurerm - *terraform.NodeApplyableProvider
+    var.Client_id - *terraform.NodeRootVariable
+    var.Client_secret - *terraform.NodeRootVariable
+    var.Subscription_id - *terraform.NodeRootVariable
+    var.Tenant_id - *terraform.NodeRootVariable
+  provider.azurerm (close) - *terraform.graphNodeCloseProvider
+    azurerm_resource_group.example - *terraform.NodePlannableResource
+    azurerm_template_deployment.terraform-arm - *terraform.NodePlannableResource
+    provider.azurerm - *terraform.NodeApplyableProvider
+  var.Client_id - *terraform.NodeRootVariable
+  var.Client_secret - *terraform.NodeRootVariable
+  var.Subscription_id - *terraform.NodeRootVariable
+  var.Tenant_id - *terraform.NodeRootVariable
+  ------
+2020/04/18 13:29:50 [TRACE] Executing graph transform *terraform.CloseProvisionerTransformer
+2020/04/18 13:29:50 [TRACE] Completed graph transform *terraform.CloseProvisionerTransformer (no changes)
+2020/04/18 13:29:50 [TRACE] Executing graph transform *terraform.RootTransformer
+2020/04/18 13:29:50 [TRACE] Completed graph transform *terraform.RootTransformer with new graph:
+  azurerm_resource_group.example - *terraform.NodePlannableResource
+    provider.azurerm - *terraform.NodeApplyableProvider
+  azurerm_template_deployment.terraform-arm - *terraform.NodePlannableResource
+    provider.azurerm - *terraform.NodeApplyableProvider
+  meta.count-boundary (EachMode fixup) - *terraform.NodeCountBoundary
+    azurerm_resource_group.example - *terraform.NodePlannableResource
+    azurerm_template_deployment.terraform-arm - *terraform.NodePlannableResource
+    provider.azurerm - *terraform.NodeApplyableProvider
+    var.Client_id - *terraform.NodeRootVariable
+    var.Client_secret - *terraform.NodeRootVariable
+    var.Subscription_id - *terraform.NodeRootVariable
+    var.Tenant_id - *terraform.NodeRootVariable
+  provider.azurerm - *terraform.NodeApplyableProvider
+    var.Client_id - *terraform.NodeRootVariable
+    var.Client_secret - *terraform.NodeRootVariable
+    var.Subscription_id - *terraform.NodeRootVariable
+    var.Tenant_id - *terraform.NodeRootVariable
+  provider.azurerm (close) - *terraform.graphNodeCloseProvider
+    azurerm_resource_group.example - *terraform.NodePlannableResource
+    azurerm_template_deployment.terraform-arm - *terraform.NodePlannableResource
+    provider.azurerm - *terraform.NodeApplyableProvider
+  root - terraform.graphNodeRoot
+    meta.count-boundary (EachMode fixup) - *terraform.NodeCountBoundary
+    provider.azurerm (close) - *terraform.graphNodeCloseProvider
+  var.Client_id - *terraform.NodeRootVariable
+  var.Client_secret - *terraform.NodeRootVariable
+  var.Subscription_id - *terraform.NodeRootVariable
+  var.Tenant_id - *terraform.NodeRootVariable
+  ------
+2020/04/18 13:29:50 [TRACE] Executing graph transform *terraform.TransitiveReductionTransformer
+2020/04/18 13:29:50 [TRACE] Completed graph transform *terraform.TransitiveReductionTransformer with new graph:
+  azurerm_resource_group.example - *terraform.NodePlannableResource
+    provider.azurerm - *terraform.NodeApplyableProvider
+  azurerm_template_deployment.terraform-arm - *terraform.NodePlannableResource
+    provider.azurerm - *terraform.NodeApplyableProvider
+  meta.count-boundary (EachMode fixup) - *terraform.NodeCountBoundary
+    azurerm_resource_group.example - *terraform.NodePlannableResource
+    azurerm_template_deployment.terraform-arm - *terraform.NodePlannableResource
+  provider.azurerm - *terraform.NodeApplyableProvider
+    var.Client_id - *terraform.NodeRootVariable
+    var.Client_secret - *terraform.NodeRootVariable
+    var.Subscription_id - *terraform.NodeRootVariable
+    var.Tenant_id - *terraform.NodeRootVariable
+  provider.azurerm (close) - *terraform.graphNodeCloseProvider
+    azurerm_resource_group.example - *terraform.NodePlannableResource
+    azurerm_template_deployment.terraform-arm - *terraform.NodePlannableResource
+  root - terraform.graphNodeRoot
+    meta.count-boundary (EachMode fixup) - *terraform.NodeCountBoundary
+    provider.azurerm (close) - *terraform.graphNodeCloseProvider
+  var.Client_id - *terraform.NodeRootVariable
+  var.Client_secret - *terraform.NodeRootVariable
+  var.Subscription_id - *terraform.NodeRootVariable
+  var.Tenant_id - *terraform.NodeRootVariable
+  ------
+2020/04/18 13:29:50 [DEBUG] Starting graph walk: walkPlan
+2020/04/18 13:29:50 [TRACE] dag/walk: updating graph
+2020/04/18 13:29:50 [TRACE] dag/walk: added new vertex: "root"
+2020/04/18 13:29:50 [TRACE] dag/walk: added new vertex: "azurerm_resource_group.example"
+2020/04/18 13:29:50 [TRACE] dag/walk: added new vertex: "var.Client_secret"
+2020/04/18 13:29:50 [TRACE] dag/walk: added new vertex: "var.Tenant_id"
+2020/04/18 13:29:50 [TRACE] dag/walk: added new vertex: "var.Subscription_id"
+2020/04/18 13:29:50 [TRACE] dag/walk: added new vertex: "var.Client_id"
+2020/04/18 13:29:50 [TRACE] dag/walk: added new vertex: "provider.azurerm"
+2020/04/18 13:29:50 [TRACE] dag/walk: added new vertex: "provider.azurerm (close)"
+2020/04/18 13:29:50 [TRACE] dag/walk: added new vertex: "azurerm_template_deployment.terraform-arm"
+2020/04/18 13:29:50 [TRACE] dag/walk: added new vertex: "meta.count-boundary (EachMode fixup)"
+2020/04/18 13:29:50 [TRACE] dag/walk: added edge: "azurerm_resource_group.example" waiting on "provider.azurerm"
+2020/04/18 13:29:50 [TRACE] dag/walk: added edge: "meta.count-boundary (EachMode fixup)" waiting on "azurerm_resource_group.example"
+2020/04/18 13:29:50 [TRACE] dag/walk: added edge: "meta.count-boundary (EachMode fixup)" waiting on "azurerm_template_deployment.terraform-arm"
+2020/04/18 13:29:50 [TRACE] dag/walk: added edge: "provider.azurerm" waiting on "var.Client_id"
+2020/04/18 13:29:50 [TRACE] dag/walk: added edge: "provider.azurerm" waiting on "var.Subscription_id"
+2020/04/18 13:29:50 [TRACE] dag/walk: added edge: "root" waiting on "provider.azurerm (close)"
+2020/04/18 13:29:50 [TRACE] dag/walk: added edge: "provider.azurerm (close)" waiting on "azurerm_template_deployment.terraform-arm"
+2020/04/18 13:29:50 [TRACE] dag/walk: added edge: "provider.azurerm (close)" waiting on "azurerm_resource_group.example"
+2020/04/18 13:29:50 [TRACE] dag/walk: added edge: "azurerm_template_deployment.terraform-arm" waiting on "provider.azurerm"
+2020/04/18 13:29:50 [TRACE] dag/walk: added edge: "provider.azurerm" waiting on "var.Tenant_id"
+2020/04/18 13:29:50 [TRACE] dag/walk: added edge: "root" waiting on "meta.count-boundary (EachMode fixup)"
+2020/04/18 13:29:50 [TRACE] dag/walk: added edge: "provider.azurerm" waiting on "var.Client_secret"
+2020/04/18 13:29:50 [TRACE] dag/walk: dependencies changed for "provider.azurerm", sending new deps
+2020/04/18 13:29:50 [TRACE] dag/walk: dependencies changed for "root", sending new deps
+2020/04/18 13:29:50 [TRACE] dag/walk: dependencies changed for "provider.azurerm (close)", sending new deps
+2020/04/18 13:29:50 [TRACE] dag/walk: dependencies changed for "azurerm_template_deployment.terraform-arm", sending new deps
+2020/04/18 13:29:50 [TRACE] dag/walk: dependencies changed for "azurerm_resource_group.example", sending new deps
+2020/04/18 13:29:50 [TRACE] dag/walk: dependencies changed for "meta.count-boundary (EachMode fixup)", sending new deps
+2020/04/18 13:29:50 [TRACE] dag/walk: visiting "var.Client_secret"
+2020/04/18 13:29:50 [TRACE] vertex "var.Client_secret": starting visit (*terraform.NodeRootVariable)
+2020/04/18 13:29:50 [TRACE] vertex "var.Client_secret": evaluating
+2020/04/18 13:29:50 [TRACE] [walkPlan] Entering eval tree: var.Client_secret
+2020/04/18 13:29:50 [TRACE] <root>: eval: *terraform.EvalSequence
+2020/04/18 13:29:50 [TRACE] [walkPlan] Exiting eval tree: var.Client_secret
+2020/04/18 13:29:50 [TRACE] vertex "var.Client_secret": visit complete
+2020/04/18 13:29:50 [TRACE] dag/walk: visiting "var.Subscription_id"
+2020/04/18 13:29:50 [TRACE] vertex "var.Subscription_id": starting visit (*terraform.NodeRootVariable)
+2020/04/18 13:29:50 [TRACE] dag/walk: visiting "var.Client_id"
+2020/04/18 13:29:50 [TRACE] vertex "var.Subscription_id": evaluating
+2020/04/18 13:29:50 [TRACE] [walkPlan] Entering eval tree: var.Subscription_id
+2020/04/18 13:29:50 [TRACE] <root>: eval: *terraform.EvalSequence
+2020/04/18 13:29:50 [TRACE] [walkPlan] Exiting eval tree: var.Subscription_id
+2020/04/18 13:29:50 [TRACE] vertex "var.Subscription_id": visit complete
+2020/04/18 13:29:50 [TRACE] dag/walk: visiting "var.Tenant_id"
+2020/04/18 13:29:50 [TRACE] vertex "var.Tenant_id": starting visit (*terraform.NodeRootVariable)
+2020/04/18 13:29:50 [TRACE] vertex "var.Tenant_id": evaluating
+2020/04/18 13:29:50 [TRACE] [walkPlan] Entering eval tree: var.Tenant_id
+2020/04/18 13:29:50 [TRACE] <root>: eval: *terraform.EvalSequence
+2020/04/18 13:29:50 [TRACE] [walkPlan] Exiting eval tree: var.Tenant_id
+2020/04/18 13:29:50 [TRACE] vertex "var.Tenant_id": visit complete
+2020/04/18 13:29:50 [TRACE] vertex "var.Client_id": starting visit (*terraform.NodeRootVariable)
+2020/04/18 13:29:50 [TRACE] vertex "var.Client_id": evaluating
+2020/04/18 13:29:50 [TRACE] [walkPlan] Entering eval tree: var.Client_id
+2020/04/18 13:29:50 [TRACE] <root>: eval: *terraform.EvalSequence
+2020/04/18 13:29:50 [TRACE] [walkPlan] Exiting eval tree: var.Client_id
+2020/04/18 13:29:50 [TRACE] vertex "var.Client_id": visit complete
+2020/04/18 13:29:50 [TRACE] dag/walk: visiting "provider.azurerm"
+2020/04/18 13:29:50 [TRACE] vertex "provider.azurerm": starting visit (*terraform.NodeApplyableProvider)
+2020/04/18 13:29:50 [TRACE] vertex "provider.azurerm": evaluating
+2020/04/18 13:29:50 [TRACE] [walkPlan] Entering eval tree: provider.azurerm
+2020/04/18 13:29:50 [TRACE] <root>: eval: *terraform.EvalSequence
+2020/04/18 13:29:50 [TRACE] <root>: eval: *terraform.EvalInitProvider
+2020-04-18T13:29:50.818+0530 [INFO]  plugin: configuring client automatic mTLS
+2020-04-18T13:29:50.904+0530 [DEBUG] plugin: starting plugin: path=C:\Users\Administrator\Desktop\test\Terraform-Practice\.terraform\plugins\windows_amd64\terraform-provider-azurerm_v1.44.0_x4.exe args=[C:\Users\Administrator\Desktop\test\Terraform-Practice\.terraform\plugins\windows_amd64\terraform-provider-azurerm_v1.44.0_x4.exe]
+2020-04-18T13:29:50.914+0530 [DEBUG] plugin: plugin started: path=C:\Users\Administrator\Desktop\test\Terraform-Practice\.terraform\plugins\windows_amd64\terraform-provider-azurerm_v1.44.0_x4.exe pid=10888
+2020-04-18T13:29:50.914+0530 [DEBUG] plugin: waiting for RPC address: path=C:\Users\Administrator\Desktop\test\Terraform-Practice\.terraform\plugins\windows_amd64\terraform-provider-azurerm_v1.44.0_x4.exe
+2020-04-18T13:29:52.383+0530 [INFO]  plugin.terraform-provider-azurerm_v1.44.0_x4.exe: configuring server automatic mTLS: timestamp=2020-04-18T13:29:52.380+0530
+2020-04-18T13:29:52.417+0530 [DEBUG] plugin.terraform-provider-azurerm_v1.44.0_x4.exe: plugin address: address=127.0.0.1:10000 network=tcp timestamp=2020-04-18T13:29:52.417+0530
+2020-04-18T13:29:52.417+0530 [DEBUG] plugin: using plugin: version=5
+2020/04/18 13:29:52 [TRACE] BuiltinEvalContext: Initialized "azurerm" provider for provider.azurerm
+2020/04/18 13:29:52 [TRACE] <root>: eval: terraform.EvalNoop
+2020/04/18 13:29:52 [TRACE] <root>: eval: terraform.EvalNoop
+2020/04/18 13:29:52 [TRACE] <root>: eval: *terraform.EvalOpFilter
+2020/04/18 13:29:52 [TRACE] <root>: eval: *terraform.EvalSequence
+2020/04/18 13:29:52 [TRACE] <root>: eval: *terraform.EvalGetProvider
+2020/04/18 13:29:52 [TRACE] <root>: eval: *terraform.EvalOpFilter
+2020/04/18 13:29:52 [TRACE] <root>: eval: *terraform.EvalSequence
+2020/04/18 13:29:52 [TRACE] <root>: eval: *terraform.EvalConfigProvider
+2020/04/18 13:29:52 [TRACE] buildProviderConfig for provider.azurerm: using explicit config only
+2020/04/18 13:29:52 [TRACE] GRPCProvider: GetSchema
+2020/04/18 13:29:52 [TRACE] GRPCProvider: Configure
+2020-04-18T13:29:52.552+0530 [DEBUG] plugin.terraform-provider-azurerm_v1.44.0_x4.exe: Testing if Service Principal / Client Certificate is applicable for Authentication..
+2020-04-18T13:29:52.552+0530 [DEBUG] plugin.terraform-provider-azurerm_v1.44.0_x4.exe: Testing if Multi Tenant Service Principal / Client Secret is applicable for Authentication..
+2020-04-18T13:29:52.552+0530 [DEBUG] plugin.terraform-provider-azurerm_v1.44.0_x4.exe: Testing if Service Principal / Client Secret is applicable for Authentication..
+2020-04-18T13:29:52.552+0530 [DEBUG] plugin.terraform-provider-azurerm_v1.44.0_x4.exe: Using Service Principal / Client Secret for Authentication
+2020-04-18T13:29:52.554+0530 [DEBUG] plugin.terraform-provider-azurerm_v1.44.0_x4.exe: panic: interface conversion: interface {} is nil, not map[string]interface {}
+2020-04-18T13:29:52.554+0530 [DEBUG] plugin.terraform-provider-azurerm_v1.44.0_x4.exe: 
+2020-04-18T13:29:52.554+0530 [DEBUG] plugin.terraform-provider-azurerm_v1.44.0_x4.exe: goroutine 40 [running]:
+2020-04-18T13:29:52.554+0530 [DEBUG] plugin.terraform-provider-azurerm_v1.44.0_x4.exe: github.com/terraform-providers/terraform-provider-azurerm/azurerm/internal/provider.expandFeatures(0xc000f8b6c0, 0x1, 0x1, 0x389b380)
+2020-04-18T13:29:52.554+0530 [DEBUG] plugin.terraform-provider-azurerm_v1.44.0_x4.exe: 	/opt/teamcity-agent/work/5d79fe75d4460a2f/src/github.com/terraform-providers/terraform-provider-azurerm/azurerm/internal/provider/features.go:54 +0x2fb
+2020-04-18T13:29:52.554+0530 [DEBUG] plugin.terraform-provider-azurerm_v1.44.0_x4.exe: github.com/terraform-providers/terraform-provider-azurerm/azurerm/internal/provider.providerConfigure.func1(0xc00066a540, 0x0, 0xc00052fa20, 0xc00066a540, 0x0)
+2020-04-18T13:29:52.554+0530 [DEBUG] plugin.terraform-provider-azurerm_v1.44.0_x4.exe: 	/opt/teamcity-agent/work/5d79fe75d4460a2f/src/github.com/terraform-providers/terraform-provider-azurerm/azurerm/internal/provider/provider.go:253 +0x9b2
+2020-04-18T13:29:52.554+0530 [DEBUG] plugin.terraform-provider-azurerm_v1.44.0_x4.exe: github.com/hashicorp/terraform-plugin-sdk/helper/schema.(*Provider).Configure(0xc0009bf300, 0xc000f7ccf0, 0x39ac8a0, 0xc000f7cb70)
+2020-04-18T13:29:52.554+0530 [DEBUG] plugin.terraform-provider-azurerm_v1.44.0_x4.exe: 	/opt/teamcity-agent/work/5d79fe75d4460a2f/src/github.com/terraform-providers/terraform-provider-azurerm/vendor/github.com/hashicorp/terraform-plugin-sdk/helper/schema/provider.go:275 +0xfd
+2020-04-18T13:29:52.554+0530 [DEBUG] plugin.terraform-provider-azurerm_v1.44.0_x4.exe: github.com/hashicorp/terraform-plugin-sdk/internal/helper/plugin.(*GRPCProviderServer).Configure(0xc000162d80, 0x471d0e0, 0xc000667140, 0xc00016ea40, 0xc000162d80, 0xc000667140, 0xc000f67bd0)
+2020-04-18T13:29:52.554+0530 [DEBUG] plugin.terraform-provider-azurerm_v1.44.0_x4.exe: 	/opt/teamcity-agent/work/5d79fe75d4460a2f/src/github.com/terraform-providers/terraform-provider-azurerm/vendor/github.com/hashicorp/terraform-plugin-sdk/internal/helper/plugin/grpc_provider.go:487 +0x2ed
+2020-04-18T13:29:52.554+0530 [DEBUG] plugin.terraform-provider-azurerm_v1.44.0_x4.exe: github.com/hashicorp/terraform-plugin-sdk/internal/tfplugin5._Provider_Configure_Handler(0x3d35aa0, 0xc000162d80, 0x471d0e0, 0xc000667140, 0xc000142300, 0x0, 0x471d0e0, 0xc000667140, 0xc000f6c000, 0x21b)
+2020-04-18T13:29:52.554+0530 [DEBUG] plugin.terraform-provider-azurerm_v1.44.0_x4.exe: 	/opt/teamcity-agent/work/5d79fe75d4460a2f/src/github.com/terraform-providers/terraform-provider-azurerm/vendor/github.com/hashicorp/terraform-plugin-sdk/internal/tfplugin5/tfplugin5.pb.go:3135 +0x245
+2020-04-18T13:29:52.554+0530 [DEBUG] plugin.terraform-provider-azurerm_v1.44.0_x4.exe: google.golang.org/grpc.(*Server).processUnaryRPC(0xc000512420, 0x4774e20, 0xc000078780, 0xc000f5c000, 0xc000666c00, 0x7b01678, 0x0, 0x0, 0x0)
+2020-04-18T13:29:52.554+0530 [DEBUG] plugin.terraform-provider-azurerm_v1.44.0_x4.exe: 	/opt/teamcity-agent/work/5d79fe75d4460a2f/src/github.com/terraform-providers/terraform-provider-azurerm/vendor/google.golang.org/grpc/server.go:995 +0x46d
+2020-04-18T13:29:52.554+0530 [DEBUG] plugin.terraform-provider-azurerm_v1.44.0_x4.exe: google.golang.org/grpc.(*Server).handleStream(0xc000512420, 0x4774e20, 0xc000078780, 0xc000f5c000, 0x0)
+2020-04-18T13:29:52.554+0530 [DEBUG] plugin.terraform-provider-azurerm_v1.44.0_x4.exe: 	/opt/teamcity-agent/work/5d79fe75d4460a2f/src/github.com/terraform-providers/terraform-provider-azurerm/vendor/google.golang.org/grpc/server.go:1275 +0xdad
+2020-04-18T13:29:52.554+0530 [DEBUG] plugin.terraform-provider-azurerm_v1.44.0_x4.exe: google.golang.org/grpc.(*Server).serveStreams.func1.1(0xc0004341b0, 0xc000512420, 0x4774e20, 0xc000078780, 0xc000f5c000)
+2020-04-18T13:29:52.554+0530 [DEBUG] plugin.terraform-provider-azurerm_v1.44.0_x4.exe: 	/opt/teamcity-agent/work/5d79fe75d4460a2f/src/github.com/terraform-providers/terraform-provider-azurerm/vendor/google.golang.org/grpc/server.go:710 +0xa6
+2020-04-18T13:29:52.554+0530 [DEBUG] plugin.terraform-provider-azurerm_v1.44.0_x4.exe: created by google.golang.org/grpc.(*Server).serveStreams.func1
+2020-04-18T13:29:52.554+0530 [DEBUG] plugin.terraform-provider-azurerm_v1.44.0_x4.exe: 	/opt/teamcity-agent/work/5d79fe75d4460a2f/src/github.com/terraform-providers/terraform-provider-azurerm/vendor/google.golang.org/grpc/server.go:708 +0xa8
+2020/04/18 13:29:52 [ERROR] <root>: eval: *terraform.EvalConfigProvider, err: rpc error: code = Unavailable desc = transport is closing
+2020/04/18 13:29:52 [ERROR] <root>: eval: *terraform.EvalSequence, err: rpc error: code = Unavailable desc = transport is closing
+2020/04/18 13:29:52 [ERROR] <root>: eval: *terraform.EvalOpFilter, err: rpc error: code = Unavailable desc = transport is closing
+2020/04/18 13:29:52 [ERROR] <root>: eval: *terraform.EvalSequence, err: rpc error: code = Unavailable desc = transport is closing
+2020/04/18 13:29:52 [TRACE] [walkPlan] Exiting eval tree: provider.azurerm
+2020/04/18 13:29:52 [TRACE] vertex "provider.azurerm": visit complete
+2020/04/18 13:29:52 [TRACE] dag/walk: upstream of "azurerm_template_deployment.terraform-arm" errored, so skipping
+2020/04/18 13:29:52 [TRACE] dag/walk: upstream of "azurerm_resource_group.example" errored, so skipping
+2020/04/18 13:29:52 [TRACE] dag/walk: upstream of "meta.count-boundary (EachMode fixup)" errored, so skipping
+2020/04/18 13:29:52 [TRACE] dag/walk: upstream of "provider.azurerm (close)" errored, so skipping
+2020/04/18 13:29:52 [TRACE] dag/walk: upstream of "root" errored, so skipping
+2020/04/18 13:29:52 [INFO] backend/local: plan operation completed
+2020/04/18 13:29:52 [TRACE] statemgr.Filesystem: removing lock metadata file .terraform.tfstate.lock.info
+2020/04/18 13:29:52 [TRACE] statemgr.Filesystem: unlocked by closing terraform.tfstate
+2020-04-18T13:29:52.576+0530 [DEBUG] plugin: plugin process exited: path=C:\Users\Administrator\Desktop\test\Terraform-Practice\.terraform\plugins\windows_amd64\terraform-provider-azurerm_v1.44.0_x4.exe pid=10888 error="exit status 2"
+2020-04-18T13:29:52.577+0530 [DEBUG] plugin: plugin exited
