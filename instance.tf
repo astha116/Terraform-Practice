@@ -1,10 +1,10 @@
 resource "azurerm_resource_group" "example" {
-  name     = "example"
+  name     = "example3"
   location = "East US"
 }
 resource "azurerm_template_deployment" "terraform-arm" {
-  name                = "terraform-arm-01"
-  resource_group_name = "azurerm_resource_group.example.name"
+  name                = "terraform1"
+  resource_group_name = "example3"
   template_body = file("azuredeploy.json")
   deployment_mode = "Incremental"
 }
